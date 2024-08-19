@@ -1,19 +1,14 @@
 org 100h
-
-
 num1 dw 1234h   
 num2 dw 5678h   
-
 start:
     
     mov ax, num1 
     add ax, num2  
-
-    
+  
     mov bl, ah    
     mov al, al   
 
-  
     mov ah, bl    
     and ah, 0F0h  
     shr ah, 4     
